@@ -387,7 +387,7 @@ string JSFieldName(const FieldDescriptor* desc) {
   if (desc->is_map()) {
     js_field_name += "Map";
   } else if (desc->is_repeated()) {
-    js_field_name += "List";
+    js_field_name += "";
   }
   return js_field_name;
 }
@@ -408,7 +408,7 @@ string CamelCaseJSFieldName(const FieldDescriptor* desc) {
   if (desc->is_map()) {
     js_field_name += "Map";
   } else if (desc->is_repeated()) {
-    js_field_name += "List";
+    js_field_name += "";
   }
   return js_field_name;
 }
